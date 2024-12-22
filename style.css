@@ -1,0 +1,124 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: rgb(255,255,255);
+    background: url('обои.jpg')no-repeat;
+    background-size: contain;
+    /* background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(253,45,45,1) 100%); */
+    overflow: hidden; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.timer{
+    display: grid;
+    grid-template-columns: 5.5rem 1.5rem 5.5rem 1.5rem 5.5rem 1.5rem 5.5rem;
+    font-size: 5rem;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 200px;
+    color: white;
+    
+}
+  
+#h2{
+    font-size: 20px;
+    position: absolute;
+    margin-bottom: 120px;
+    
+}
+
+.timer__item{
+    position: relative;
+}
+  
+.timer__item::before{
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    bottom: -0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.875rem;
+    color: #424242;
+}
+
+#snowCanvas{
+    z-index: -1;
+    top: -50;
+}
+
+header{
+    height: 50px;
+    align-items:center;
+    /* flex-direction: column; */
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a{
+    text-decoration: none;
+    color: #333; 
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+canvas { 
+    display: block; 
+} 
+
+h2{
+    color: white;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+    /* background-color: rgba(255,255,255,0.5); */
+    border-radius: 50%;
+    margin-top: 20px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    color: white;
+}
+
+
+#logo{
+    margin-top: 50px;
+    margin-left: 70px;
+    width: 100px;
+    position: relative;
+    height: 100px;
+    /* aspect-ratio: 3/2; */
+    /* object-fit: contain; */
+    /* mix-blend-mode: color-burn; */
+}
+
+
+.container{
+    border: 2px solid black;
+    width: 300px;
+    height: 400px;
+}
+
+.images{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
